@@ -53,5 +53,5 @@ Rails.application.configure do
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 
   # Configure Default Styling As SASS
-  config.sass.preferred_syntax = :sass
+  config.sass.preferred_syntax = :scss
 end
