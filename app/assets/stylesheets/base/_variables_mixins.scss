@@ -1,0 +1,28 @@
+/* Custom Color Scheme */
+$white:   #ffffff;
+$black:   #000000;
+$mint:    #8fd6d8;
+$silver:  #a5aaae;
+$heather: #444444;
+$medgrey: #93989b;
+$peach:   #f67d75;
+$pink:    #fd3b6d;
+
+/* Custom Fonts */
+@import url('https://fonts.googleapis.com/css?family=Muli:400,700,900');
+$Muli: 'Muli', sans-serif;
+
+/* Custom Mixins */
+@mixin background {
+  background: {
+    size: cover;
+    position: center;
+    repeat: no-repeat;
+  }
+}
+
+@mixin btn-properties {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}

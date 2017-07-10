@@ -9,6 +9,14 @@
   </head>
 
   <body>
+    <% if current_page?(root_path) %>
+      <%= render 'layouts/templates/home_header' %>
+    <% else %>
+      <%= render 'layouts/templates/header' %>
+    <% end %>
+
     <%= yield %>
+
+    <%= render 'layouts/templates/footer' %>
   </body>
 </html>

@@ -1,3 +1,192 @@
 body {
+  //display: flex;
+  //flex-flow: column nowrap;
   font-family: $Muli;
 }
+
+a {
+  text-decoration: none;
+  transition: all ease-in-out 0.3s;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+image {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.page-title {
+  color: $mint;
+}
+
+.center-txt {
+  text-align: center;
+}
+
+/* Home Header Styles */
+#home_header {
+  background: url(asset_path('home_header_bg.jpg'));
+  @include background;
+  height: 100vh;
+  color: $white;
+  .home-logo {
+    margin-top: 0;
+    float: left;
+    a {
+      color: $white;
+    }
+  }
+  .navbar {
+    padding: 20px 0;
+  }
+  .nav {
+    padding: 0;
+    margin: 10px 0;
+    float: right;
+    li {
+      list-style: none;
+      display: inline-block;
+      a {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: .9em;
+        margin: 0 10px;
+        :nth-last-child(1) {
+          margin-right: 0;
+        }
+      }
+      .navlink {
+        color: $white;
+        &:hover {
+          color: $peach;
+        }
+      }
+      .login-btn {
+        color: $white;
+        border: 2px solid $white;
+        padding: 3px 10px;
+        &:hover {
+          color: $peach;
+          border: 2px solid $peach;
+        }
+      }
+    }
+  }
+  .banner {
+    clear: both;
+    .banner-container {
+      max-width: 70%;
+      margin: 0 auto;
+      padding: 20vh 0 0 0;
+      .banner-title {
+        margin: 0;
+        font-size: 2em;
+        letter-spacing: 2px;
+      }
+      .banner-subtitle {
+        margin-top: 10px;
+        font-size: 2.5em;
+        display: none;
+        // text-transform: lowercase;
+        // font-variant: small-caps;
+        // letter-spacing: 6.3px;
+        // line-height: .5em;
+      }
+      .banner-text {
+        font-size: 1.35em;
+        margin-top: -10px;
+      }
+      .banner-btn {
+        @include btn-properties;
+        margin-top: 20px;
+        .home-learnmore {
+          padding: 10px 20px;
+          color: white;
+          border: 2px solid white;
+          &:hover {
+            color: $peach;
+            border: 2px solid $peach;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Header Styles */
+#header {
+  background: $mint;
+  height: 70px;
+  color: $white;
+  .home-logo {
+    margin-top: 0;
+    float: left;
+    a {
+      color: $white;
+    }
+  }
+  .navbar {
+    padding: 15px 0;
+  }
+  .nav {
+    padding: 0;
+    margin: 10px 0;
+    float: right;
+    li {
+      list-style: none;
+      display: inline-block;
+      a {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: .9em;
+        margin: 0 10px;
+        :nth-last-child(1) {
+          margin-right: 0;
+        }
+      }
+      .navlink {
+        color: $white;
+        &:hover {
+          color: $peach;
+        }
+      }
+      .login-btn {
+        color: $white;
+        border: 2px solid $white;
+        padding: 3px 10px;
+        &:hover {
+          color: $peach;
+          border: 2px solid $peach;
+        }
+      }
+    }
+  }
+}
+
+/* Footer Styles */
+.copyright {
+  text-align: center;
+  font-size: 0.8em;
+  a {
+    color: $peach;
+    &:hover {
+      color: $heather;
+    }
+  }
+}
+
+/* Media Queries */
+// @media screen and (max-width: 460px) {
+//   .nav {
+//     display: none;
+//   }
+// }

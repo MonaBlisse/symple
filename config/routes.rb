@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
-  get '/' => 'pages#home'
+
+  controller :pages do
+    get :home
+    get :about
+    get :contact
+  end
 
   root to: 'pages#home'
 end
