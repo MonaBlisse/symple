@@ -54,4 +54,7 @@ Rails.application.configure do
 
   # Configure Default Styling As SASS
   config.sass.preferred_syntax = :scss
+
+  # Configure Devise
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 end
